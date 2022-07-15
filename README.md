@@ -1,5 +1,5 @@
 # Personal-Webpage
-## **[View my Personal Webpage Here](https://dakota-kallas.github.io/Personal-Webpage/)**
+## **[View my Personal Webpage Here](https://dakotakallas.dev/)**
 
 <p>&nbsp;</p>
 
