@@ -77,22 +77,41 @@
         </div>
     </div>
 
-
     <div class="bottom-container">
         <a class="footer-link" href="https://www.linkedin.com/in/dakota-kallas">LinkedIn</a>
         <a class="footer-link" href="https://github.com/dakota-kallas">GitHub</a>
         <p class="copyright">© 2022 Dakota Kallas.</p>
-        <h6 class="credits"><a href="https://www.flaticon.com/free-icons/drums" title="drums icons">Drums icons created by Freepik - Flaticon</a></h6>
-        <h6 class="credits"><a href="https://www.flaticon.com/free-icons/java" title="java icons">Java icons created by Freepik - Flaticon</a></h6>
-        <h6 class="credits"><a href="https://www.flaticon.com/free-icons/c-sharp" title="c sharp icons">C sharp icons created by ibrandify - Flaticon</a></h6>
-        <h6 class="credits"><a href="https://www.flaticon.com/free-icons/male" title="male icons">Male icons created by Freepik - Flaticon</a></h6>
-        <h6 class="credits"><a href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by Flatart icons - Flaticon</a></h6>
-        <h6 class="credits"><a href="https://www.flaticon.com/free-icons/sql" title="sql icons">Sql icons created by Smashicons - Flaticon</a></h6>
-        <h6 class="credits"><a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Smashicons - Flaticon</a></h6>
-        <h6 class="credits"><a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Smashicons - Flaticon</a></h6>
-        <h6 class="credits"><a href="https://www.flaticon.com/free-icons/drums" title="drums icons">Drums icons created by Freepik - Flaticon</a></h6>
-        <h6 class="credits"><a href="https://www.flaticon.com/free-icons/drum" title="drum icons">Drum icons created by Freepik - Flaticon</a></h6>
+        <button type="button" class="collapsible">Image Credits</button>
+        <div class="content">
+            <h6 class="credits"><a href="https://www.flaticon.com/free-icons/drums" title="drums icons">Drums icons created by Freepik - Flaticon</a></h6>
+            <h6 class="credits"><a href="https://www.flaticon.com/free-icons/java" title="java icons">Java icons created by Freepik - Flaticon</a></h6>
+            <h6 class="credits"><a href="https://www.flaticon.com/free-icons/c-sharp" title="c sharp icons">C sharp icons created by ibrandify - Flaticon</a></h6>
+            <h6 class="credits"><a href="https://www.flaticon.com/free-icons/male" title="male icons">Male icons created by Freepik - Flaticon</a></h6>
+            <h6 class="credits"><a href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by Flatart icons - Flaticon</a></h6>
+            <h6 class="credits"><a href="https://www.flaticon.com/free-icons/sql" title="sql icons">Sql icons created by Smashicons - Flaticon</a></h6>
+            <h6 class="credits"><a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Smashicons - Flaticon</a></h6>
+            <h6 class="credits"><a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Smashicons - Flaticon</a></h6>
+            <h6 class="credits"><a href="https://www.flaticon.com/free-icons/drums" title="drums icons">Drums icons created by Freepik - Flaticon</a></h6>
+            <h6 class="credits"><a href="https://www.flaticon.com/free-icons/drum" title="drum icons">Drum icons created by Freepik - Flaticon</a></h6>
+        </div>
     </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
